@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boat R & R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--Our Added CSS-->
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index2.html">Boat R & R</a>
+          </div>
+          <div class="navbar-collapse collapse pull-right">
+            <ul class="nav navbar-nav">
+              <li><a href="index2.html #learn">Donation Info</a></li>
+              <li><a href="index2.html #faq">Faq</a></li>
+              <li><a href="charities.html">Charities</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <a data-toggle="modal" href="#myModal" type="submit" class="btn btn-default">Log in</a>
+            </form>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row" style="text-align: center;">
+          <h1>Where Boat Owners Give Back!</h1>
+          <h2>Pledge a 30 minute boat ride to your favoite Charity!</h2>
+          <h2>A unique and generous way to give back!</h2>
+        </div>
+        <div class="row" style="margin-top: 3%;">
+          <div class="col-sm-4 col-sm-offset-3">
+            <h3>Boat Donors</h3>
+              <ul>
+                <li><h5>Tax Deductable</h5></li>
+                <li><h5>Pledging is 100% Free!</h5></li>
+                <li><h5>Information kept confidential</h5></li>
+                <li><h5>Share with someone less fortunate</h5></li>
+                <li><h5>Choose your favorite charity to donate to</h5></li>
+              </ul>  
+              <a class="btn btn-default btn-sm" href="#learn">More Info</a>
+          </div>  
+          <form class="col-sm-3 col-lg-3 pledge" role="form">
+            <h3>Pledge Today!</h3>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputname">Boat Name</label>
+              <input type="name" class="form-control" placeholder="Enter Your Boat Name Here">
+            </div>
+           
+            <a type="submit" data-toggle="modal" href="#myModal_boater" class="btn btn-default  btn-sm">Begin Your Pledge!</a><!-- Button trigger Boater Modal -->
+            <hr>
+            <a type="submit" data-toggle="modal" href="#myModal_group" class="btn btn-default btn-sm">Or Sign Up Your Club</a><!-- Button trigger Group Modal -->
+
+            <!-- Single Boater Modal -->
+            <div class="modal fade" id="myModal_boater" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Lets Finish It Up!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="">Boat Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Boat Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="">User Name</label>
+                        <input type="text" class="form-control" placeholder="Enter User Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="">Email Address</label>
+                        <input type="text" class="form-control" placeholder="Enter Email Address">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="">City</label>
+                        <input type="text" class="form-control" placeholder="Enter City Boat is Located in">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="">State</label>
+                        <input type="text" class="form-control" placeholder="Enter State Boat is Located in">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="">Zip Code</label>
+                        <input type="text" class="form-control" placeholder="Enter Zip Code">
+                      </div>
+                      <hr>
+                      <h3>Charities I'd Like to Donate a Ride to</h3>
+                      <select multiple class="form-control">
+                        <option>Wounded Warriors</option>
+                        <option>American Red Cross</option>
+                        <option>Susan G. Komen for the Cure</option>
+                        <option>American Cancer Society</option>
+                        <option>Boys and Girls Clubs of America</option>
+                        <option>St Jude Childern's Hospital</option>
+                        <option>American Heart Association</option>
+                        <option>Make-A-Wish Foundation of America</option>
+                        <option>Paralyzed Veterans of America</option>
+                      </select>
+                      <div>
+                        <h4>Or</h4>
+                      <div class="row">
+                        <div class="form-group col-sm-6"><!--Charity Selection-->
+                          <div class="form-group">
+                          <label for="">Your Charity Idea</label>
+                          <input type="text" class="form-control" placeholder="Enter Charity You Want on This List">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>
+                          <input type="checkbox"> I pledge to donate a boat ride to someone in need within the next 12 months
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="ty.html" type="button" class="btn btn-default btn-group-justified">Complete Your Pledge</a>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div></div></div>
+            <!-- /End Single Boater modal -->
+
+            <!-- Start Group Modal -->
+              <div class="modal fade" id="myModal_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row">
+                          <h3 class="text-center">Are you a Yacht Club or orginization looking to spread goodwill?</h3>
+                          <h5 class="text-center">Boat RnR is looking to help select orginizations and charities set up events where they can take out wounded warriors or other Non-proift orginization benifiaries out on rides and boat sharing experiences</h5>  
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <img src="http://miamirealestatecafe.com/files/2008/12/cimg02532.jpg" class="img-rounded pull-left" style="margin: auto 0;" width="100%" height="50%">
+                          </div>
+                          <div class="col-sm-6" style="padding-top: 5%;">
+                            <h4>Ready to take the next step and learn how we can help your orginization offer something to its members no on else can.</h4>
+                          </div>
+                        </div>    
+                        <div class="row"><!--Form goes in this div-->
+                          <form class="col-sm-6 col-sm-offset-3 pledge" role="form" style="margin-top: 5%">
+                            <h4>Pledge Today!</h4>
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputname">Originization Name</label>
+                              <input type="name" class="form-control" placeholder="Originization Name">
+                            </div>
+                            <a type="submit" data-toggle="modal" href="#myModal" class="btn btn-default btn-sm">Request Information</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+            <!--  End Group modal -->
+
+          </form>
+        </div>
+        <br><br>
+       <a href="#learn" class="col-lg-12 glyphicon glyphicon-chevron-down glyph_big hidden-xs"></a>
+          
+       
+      </div>                
+    </div>
+    <a href="#learn" id="learn"></a><!--End Jumbotron Section-->
+
+    
+    
+    <section class="benefits"><!--Start Benefits-->
+      <div class="container" style="padding: 3%;">
+      <div class="row">
+        <h1 class="text-center">Facilitating the opportunity for boat owners to give a little something back with confidence.</h1>
+      </div>  
+      <div class="row">  
+        <div class="col-sm-10 col-sm-offset-1">
+          <h3 class="text-center">Boat RnR connects boat owners with less fortunate individuals and families as well as charities that could benefit from a free boat ride of at least 30 minutes</h3>  
+        </div>  
+      </div>
+      <hr>
+      <div class="row"> 
+        <div class="col-sm-8 col-sm-offset-2">
+          <h3 class="text-center">We hope to develop a baseline of at least 10,000 boat owners around the world willing to share a short boat ride with those in need of a break</h3>
+        </div>  
+      </div>
+      <div  class="row" style="margin-top: 3%;">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="col-md-1 glyphicon glyphicon-calendar"></div>
+          <div class="col-md-11">
+            <h4>Pledge to share a boat ride with someone in need within the following 12 months</h4>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="col-md-1 glyphicon glyphicon-time"></div>
+          <div class="col-md-11">
+            <h4>The time, date and location is YOUR CHOICE</h4>
+          </div>
+        </div>
+      </div>
+      <div  class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="col-md-1 glyphicon glyphicon-flash"></div>
+          <div class="col-md-11">
+            <h4>Register on the BoatRnR site (2 minutes)</h4>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="col-md-1 glyphicon glyphicon-envelope"></div>
+          <div class="col-md-11">
+            <h4>We will be in touch within 14 days about how you can participate in 2014.</h4>
+          </div>
+        </div>
+      </div>
+      <div  class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="col-md-1 glyphicon glyphicon-lock"></div>
+          <div class="col-md-11">
+            <h4>Your information is kept strictly confidential and secure</h4>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="col-md-1 glyphicon glyphicon-heart"></div>
+          <div class="col-md-11">
+            <h4>You can select preferred charities and organizations to offer the boat ride to</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-md-offset-3" style="margin-top: 3%;">
+        <a data-toggle="modal" href="#myModal_boater" type="button" class="btn btn-default btn-lg btn-block">Pledge to Share a Boat Ride</a>
+      </div>
+    </div>
+    </section>  <!--End Benefits-->
+    
+    <a href="#faq" id="faq"></a> <!--FAQS SECTION LINK--> 
+    
+    <section class="faq"><!--Start Frequently Asked Questions Section-->
+      <div class="container">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  FAQ Question #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  FAQ Question #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  FAQ Question #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                  FAQ Question #4
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                  FAQ Question #5
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                  FAQ Question #6
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>  
+
+    <section class="cta well well-lg"><a href="#donate" id="donate"></a><!--Start Call To Action Section-->
+        <div class="container">
+            <div>
+              <h6 class="sgtext">&#169 Boat R & R<a href="http://smallgoliath.com" target="_blank"> Small Goliath.com</a></h6>
+          </div>  
+        </div>
+    </section><!--End Call To Action Section-->
+    
+    <section><!--Start Footer Section-->
+      <footer>
+        <!-- Copyright -->
+          <div class="sgtext">
+            <div class="container">
+                         
+            </div>
+          </div>
+      </footer>  
+    </section><!--End Footer Section-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boat R & R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--Our Added CSS-->
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Boat R & R</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#learn">Learn More</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#donate">Donate Your Boat</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <a data-toggle="modal" href="#myModal" type="submit" class="btn btn-default">Log in</a>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Main Heading 1</h1>
+        <h2>Main Heading 2</h2>
+        <div class="row">
+          <form class="form-inline col-xs-offset-3" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputname">Name</label>
+              <input type="name" class="form-control inlarge_form" id="exampleInputName2" placeholder="Enter Your Name Here">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword2">Password</label>
+              <input type="name" class="form-control inlarge_form" id="exampleInputPassword2" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail2">Email Address</label>
+              <input type="email" class="form-control inlarge_form" id="exampleInputEmail2" placeholder="Email">
+            </div>
+            <a type="submit" data-toggle="modal" href="#myModal" class="btn btn-lg btn-default btn_inlarge">Start Now</a><!-- Button trigger modal -->
+          </form>
+        </div>
+        <div class="row">
+          <a class="col-lg-3 pull-right btn-mrg-rt join">Join as Group</a>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <a href="#learn" class="col-lg-12 glyphicon glyphicon-chevron-down glyph_big"></a>
+        </div>  
+      </div>                
+    </div>
+    <a href="#learn" id="learn"></a><!--End Jumbotron Section-->
+
+    
+    
+    <section class="benefits"><!--Start Benefits-->
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Reason One to Pledge!</h2>
+            <img src="img/charity_picture_1.jpg" class="img-circle img-responsive" alt="charity picture">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum elit, eleifend quis adipiscing sit amet, feugiat a ligula.</p>                
+            <a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Learn More</a><!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Sign Up Now</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div>
+
+          <div class="col-lg-4">
+            <h2>Reason Two to Pledge!</h2>
+            <img src="img/charity_picture_1.jpg" class="img-rounded img-responsive" alt="charity picture">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum elit, eleifend quis adipiscing sit amet, feugiat a ligula.</p>
+            <a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Learn More</a><!-- Button trigger modal -->
+         </div>
+          <div class="col-lg-4">
+            <h2>Reason three to Pledge!</h2>
+            <img src="img/charity_picture_1.jpg" class="img-responsive" alt="charity picture">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum elit, eleifend quis adipiscing sit amet, feugiat a ligula.</p>
+            <a style="margin:auto, 0;" data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Learn More</a><!-- Button trigger modal -->
+          </div>
+        </div>
+      </div>  
+    </section>  <!--End Benefits-->
+    
+    <section class="testimonials"><!--Start testimonials-->
+      <div class="container">
+        <div class="col-lg-5 video"> <!--Start Video Testimonial-->
+          
+          <video width="450" height="350" controls>
+            <source src="#" type="video/mp4">
+            <source src="#" type="video/ogg">
+            Your browser does not support the video tag
+          </video>
+          <h3>Info about the testimonial video here</h3>
+
+        </div><!--End Video Testimonial-->
+        <div class="col-lg-6 test pull-right"> <!--Text testimonials Maybe a jquery loop of testimonials?-->
+          <div class="row">
+            <div class="bubble">
+              <blockquote>
+                <p class="quotetext">Short testimonial Area about how easy & useful the sign up process is!</p>
+              </blockquote>
+              <h4 class="quotename"><img src="img/test1.jpg" alt="" class="img-circle" style="width: 80px">Name Here</h4>
+            </div>  
+          </div>
+          <hr>
+          <div class="row">
+            <div class="bubble">
+              <blockquote>
+                <p class="quotetext">Short testimonial Area about how easy & GREAT it felt to donate a ride!! These boxes will scale with the content put inside of them!!!</p>
+              </blockquote>
+              <h4 class="quotename"><img src="img/test1.jpg" alt="" class="img-circle" style="width: 80px">Name Here</h4>
+            </div>  
+          </div>
+        </div>   
+      </div>  
+    </seciton><a href="#faq" id="faq"></a> <!--End testimonials--> 
+    
+    <section class="faq"><!--Start Frequently Asked Questions Section-->
+      <div class="container">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  FAQ Question #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  FAQ Question #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  FAQ Question #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                  FAQ Question #4
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                  FAQ Question #5
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                  FAQ Question #6
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>  
+
+    <section class="cta well well-lg"><a href="#donate" id="donate"></a><!--Start Call To Action Section-->
+        <div class="container">
+          <h1>Boat owners giving back!</h1>
+          <h2>A unique and generous way to give back</h2>
+          <div class="row">
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputname">Name</label>
+              <input type="name" class="form-control inlarge_form" id="exampleInputEmail2" placeholder="Enter Your Name Here">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword2">Password</label>
+              <input type="name" class="form-control inlarge_form" id="exampleInputPassword2" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail2">Email Address</label>
+              <input type="email" class="form-control inlarge_form" id="exampleInputEmail2" placeholder="Email">
+            </div>
+            <a type="submit" data-toggle="modal" href="#myModal" class="btn btn-lg btn-default btn_inlarge">Start Now</a><!-- Button trigger modal -->
+          </form>
+        </div>
+        </div>
+    </section><!--End Call To Action Section-->
+    
+    <section><!--Start Footer Section-->
+      <footer>
+        <!-- Copyright -->
+          <div class="sgtext">
+            <div class="container">
+                <div>
+                    <h6 class="sgtext">&#169 Small Goliath LLC<a href="http://smallgoliath.com" target="_blank"> Small Goliath.com</a></h6>
+                </div>           
+            </div>
+          </div>
+      </footer>  
+    </section><!--End Footer Section-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
